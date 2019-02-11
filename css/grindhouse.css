@@ -1,0 +1,39 @@
+.navbar-toggler {
+  color: #EF7F70; }
+
+.navbar-brand {
+  color: rgba(255, 255, 255, 0.5); }
+
+.nav-link {
+  padding: 2rem 1.5rem;
+  color: rgba(255, 255, 255, 0.5); }
+
+.nav-link:hover {
+  color: white; }
+
+.nav-link:active {
+  color: white; }
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background-image: url("../img/banner-img.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #EF7F70; }
+
+.header-bean {
+  max-width: 20rem;
+  font-size: 45px;
+  z-index: 10;
+  margin: 10rem 10rem; }
+
+.header-bean::before {
+  content: url("../img/coffee-bean.png");
+  position: absolute;
+  left: 20rem;
+  top: 15rem;
+  z-index: 1; }
