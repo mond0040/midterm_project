@@ -1,25 +1,26 @@
 $primary-color:#EF7F70;
-
-
+$nav-color:rgba(255, 255, 255, 0.5);
+$texts-white:white;
+$texts-style:'Poppins', sans-serif;
 
 
  .navbar-toggler {
   color: $primary-color;
 }
  .navbar-brand {
-  color: rgba(255, 255, 255, 0.5);
+  color: $nav-color;
 }
  .nav-link {
   padding: 2rem 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: $nav-color;
 }
 
  .nav-link:hover {
-  color: white;
+  color:$texts-white;
 }
 
  .nav-link:active {
-  color: white;
+  color:$texts-white;
 }
 
 
@@ -39,8 +40,6 @@ $primary-color:#EF7F70;
 
 .header-bean {
   max-width: 25rem;
-  font-size: 45px;
-  z-index: 10;
   margin: 10rem 10rem;
 }
 

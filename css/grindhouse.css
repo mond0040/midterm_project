@@ -27,8 +27,6 @@
 
 .header-bean {
   max-width: 25rem;
-  font-size: 45px;
-  z-index: 10;
   margin: 10rem 10rem; }
 
 .header-bean::before {
