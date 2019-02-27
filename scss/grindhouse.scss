@@ -2,7 +2,7 @@ $primary-color:#EF7F70;
 $nav-color:rgba(255, 255, 255, 0.5);
 $texts-white:white;
 $texts-style:'Poppins', sans-serif;
-
+$section-style:10rem;
 
  .navbar-toggler {
   color: $primary-color;
@@ -41,16 +41,48 @@ $texts-style:'Poppins', sans-serif;
 .header-bean {
   max-width: 25rem;
   margin: 10rem 10rem;
+  position: relative;
+  z-index:2;
 }
 
-
-
-.header-bean::before{
-  content: url("../img/coffee-bean.png");
+.header-bean::before {
+  content:'';
   position: absolute;
-  left: 20rem;
-  top: 15rem;
-  z-index: 1;
+  width:5px;
+  height:200px;
+  background-color: white;
+  left: 25rem;
+  top: 0rem;
+  z-index: -1;
+}
+
+.header-bean::after {
+  content: url(../img/coffee-bean.png);
+  position: absolute;
+  left: -7rem;
+  top: -10rem;
+  z-index: -1;
+}
+
+// About Section
+.about-section{
+  margin:$section-style;
+}
+
+.img-about {
+  width: 30rem;
+  float: right;
+  margin-right: 10rem;
+}
+
+.welcome::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 5px;
+  background-color: #EF7F70;
+  left: 1rem;
+  top: 6rem;
 }
 
 // Menu section
@@ -66,7 +98,32 @@ $texts-style:'Poppins', sans-serif;
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: 87.2%;
+}
+
+.menu-section .container {
+  padding:$section-style;
+}
+
+.coffee{
+  margin: 5rem;
+}
+
+// Visit section
+.visit-section{
+  padding:$section-style;
+  
+}
+
+.visit-section {
+  background: #EF7F70;
+}
+
+.contact-box {
+  margin: auto;
+  width: 60rem;
+  height: 20rem;
+  background: $texts-white;
 }
 
 // Footer
