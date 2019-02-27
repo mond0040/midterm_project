@@ -2,7 +2,7 @@ $primary-color:#EF7F70;
 $nav-color:rgba(255, 255, 255, 0.5);
 $texts-white:white;
 $texts-style:'Poppins', sans-serif;
-$section-style:10rem;
+$section-style:10rem 0;
 
  .navbar-toggler {
   color: $primary-color;
@@ -85,38 +85,97 @@ $section-style:10rem;
   top: 6rem;
 }
 
-// Menu section
+/* // Menu section */
+.menu-section{
+  position: relative;
+}
 .parallax{
- background-image: url("../img/parallax-bean.png");
- min-height: 500px;
- background-attachment: fixed;
- background-position: center;
- background-repeat: repeat;
-}
-
-.overlay {
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    width: 100%;
-    height: 87.2%;
-}
-
-.menu-section .container {
-  padding:$section-style;
-}
-
-.coffee{
-  margin: 5rem;
-}
-
+  background-image: url("../img/parallax-bean.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+ }
+ 
+ .overlay {
+     background: rgba(0, 0, 0, 0.8);
+     position: absolute;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .menu-section .container {
+   padding:10rem 0;
+   position: relative;
+ }
+ 
+ .coffee{
+   margin: 5rem;
+ 
+ }
+ 
+ .ratio{
+     text-align: center;
+     border: 1px solid white;
+     width: 300px;
+     margin: auto;
+     padding: 20px;
+ }
+ /* 
+ .menu-list{
+     display: flex;
+     flex-direction: column;
+ } */
+ 
+ .menu-item {
+     width: 50%;
+     padding: 20px;
+     border: 1px solid white;
+     text-align: center;
+     margin: 10px 0 10px 0;
+     transition: .3s;
+ }
+ 
+ .menu-item.current{
+     background: lightsalmon;
+ }
+ 
+ .menu-item:hover{
+     background: lightsalmon;
+     transition: .3s;
+     transform: scale(1.1);
+     cursor: pointer;
+ }
+ 
+ .menu-item:active{
+ background: white;
+ }
+ 
+ .menu-title::after {
+     content: "";
+     position: absolute;
+     top: 14rem;
+     left: 33rem;
+     width: 100px;
+     height: 2px;
+     background-color: salmon;
+ }
 // Visit section
 .visit-section{
-  padding:$section-style;
-  
+  background-image:url(../img/visit-img.jpg);
+  background-size: cover;
+  position: relative;
 }
 
-.visit-section {
-  background: #EF7F70;
+.overlay2 {
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.visit-section .container{
+  padding:$section-style;
 }
 
 .contact-box {
