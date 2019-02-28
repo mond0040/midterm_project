@@ -11,24 +11,29 @@
     crossorigin="anonymous">
 
   <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/xil6yke.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <!-- Custom styles -->
   <link href="css/grindhouse.css" rel="stylesheet">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#page-top">Grind House</a>
+      <a class="navbar-brand" href="#page-top"><img class="logo" src="img/logo.png" alt=""></a>
       <div navbar navbar-expand-lg navbar-light fixed-top>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars"></i>
+          </span>       
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class=" navbar-nav ml-auto">
+        <div class="collapse navbar-collapse nav-menu" id="myNavbar">
+          <ul class="navbar-nav ml-auto text-uppercase">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
@@ -69,28 +74,30 @@
       </div>
     </div>
   </section>
-  <section id="menu" class="menu-section text-white">
+  <section id="menu" class="menu-section text-white ">
     <div class="overlay"></div>
     <div class="parallax">
       <div class="container">
         <h2 class="menu-title text-center">MENU</h2>
 
-        <div class="row coffee d-flex">
-          <div class="col-sm-4 buttons menu-list d-flex flex-column">
+        <div class="row coffee d-flex text-uppercase">
+          <div class="col-lg-4 buttons menu-list d-flex flex-column align-items-md-center">
 
             <a class="showSingle menu-item" target="1"><span>Espresso</span></a>
             <a class="showSingle menu-item" target="2"><span>Latte</span></a>
             <a class="showSingle menu-item" target="3"><span>Cappuccino</span></a>
 
           </div>
-          <div class="col-sm-4 coffee-visual">
+          <div class="col-lg-4 coffee-visual d-flex justify-content-center">
             <!-- <img src="img/mocha.png" alt="" class="img-fluid"> -->
-            <div id="div1" class="targetDiv">Lorum Ipsum1</div>
-            <div id="div2" class="targetDiv">Lorum Ipsum2</div>
-            <div id="div3" class="targetDiv">Lorum Ipsum3</div>
-            <div id="div4" class="targetDiv">Lorum Ipsum4</div>
+            <div id="div1" class="targetDiv"><img src="img/espresso.png" alt="" class="menu-img"></div>
+            <div id="div2" class="targetDiv"><img src="img/latte.png" alt="" class="menu-img"></div>
+            <div id="div3" class="targetDiv"><img src="img/cap.png" alt="" class="menu-img"></div>
+            <div id="div4" class="targetDiv"><img src="img/mocha.png" alt="" class="menu-img"></div>
+            <div id="div5" class="targetDiv"><img src="img/americano.png" alt="" class="menu-img"></div>
+            <div id="div6" class="targetDiv"><img src="img/fog.png" alt="" class="menu-img"></div>
           </div>
-          <div class="col-sm-4 buttons menu-list d-flex flex-column align-items-end">
+          <div class="col-lg-4 buttons menu-list d-flex flex-column align-items-lg-end align-items-md-center">
 
             <a class="showSingle menu-item" target="4"><span>Mocha</span></a>
             <a class="showSingle menu-item" target="5"><span>Americano</span></a>
@@ -114,31 +121,30 @@
     <div class="container">
       <div class="contact-box d-flex">
         <div class="row">
-          <div class="col-sm-4 d-flex">
+          <div class="col-lg-4 d-flex flex-column m-auto visit-text">
             <h2>Visit Us</h2>
             <p>
-              Address: 1651 Merivale Rd, Nepean, ON K2G 3K2
-              Mobile: 581-111-2222
-              Mail: grindhouse@gmail.com
+              Address: 1651 Merivale Rd, Nepean, ON K2G 3K2<br>
+              <span>Mobile: 581-111-2222</span><br>
+              <span>Mail: grindhouse@gmail.com</span>
             </p>
           </div>
-          <div class="col-sm-8 d-flex"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.915258700119!2d-75.75914377105522!3d45.34966756639879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0722395fc63d%3A0x35c46b5ff47a522!2sAlgonquin+College%2C+1385+Woodroffe+Ave%2C+Nepean%2C+ON+K2G+3G7!5e0!3m2!1sen!2sca!4v1549929423129"
-              width="500" height="200" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
+          <div class="col-lg-8 d-flex"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.915258700119!2d-75.75914377105522!3d45.34966756639879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0722395fc63d%3A0x35c46b5ff47a522!2sAlgonquin+College%2C+1385+Woodroffe+Ave%2C+Nepean%2C+ON+K2G+3G7!5e0!3m2!1sen!2sca!4v1549929423129"  frameborder="0" style="width:100%; border:0" allowfullscreen=""></iframe></div>
         </div>
       </div>
     </div>
 
 
   </section>
-  <footer>
+  <footer class="text-white">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
+      <div class="row d-flex ">
+        <div class="col-md-4 d-flex ">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4 d-flex justify-content-center footer-menu">
           <ul class=" navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -151,21 +157,24 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4 d-flex">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book.</p>
         </div>
       </div>
-      <p>Copyright © 2019 All Rights Reserved. by Grind House</p>
+      <p class="text-center">Copyright © 2019 All Rights Reserved. by Grind House</p>
     </div>
   </footer>
+</div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 
