@@ -155,7 +155,9 @@ a:hover {
 
 @media (max-width: 992px) {
   .menu-title::after {
-    display: none; } }
+    display: none; }
+  .nav-link {
+    color: #000000; } }
 
 .visit-section {
   color: #6b6b6b;
