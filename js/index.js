@@ -13,17 +13,7 @@ $(document).ready(function () {
   })
 })
 
-// Loading
-var myVar
 
-function myFunction () {
-  myVar = setTimeout(showPage, 3000)
-}
-
-function showPage () {
-  document.getElementById('loader').style.display = 'none'
-  document.getElementById('myDiv').style.display = 'block'
-}
 // Scrolling Smooth
 $(document).ready(function () {
   $('body').scrollspy({target: '.navbar', offset: 50})
