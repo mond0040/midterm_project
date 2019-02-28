@@ -163,7 +163,9 @@ a:hover {
   .menu-item {
     width: 100%; }
   .menu-title::after {
-    display: none; } }
+    display: none; }
+  .nav-link {
+    color: #000000; } }
 
 .visit-section {
   color: #6b6b6b;
